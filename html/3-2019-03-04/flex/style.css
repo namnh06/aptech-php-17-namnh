@@ -1,0 +1,20 @@
+.parent {
+  height: 500px;
+  background-color: lightsalmon;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.children {
+  height: 20px;
+  width: 20px;
+  background-color: darkcyan;
+}
+
+.children-1 {
+  height: 100px;
+  width: 8.33%;
+  background-color: darkseagreen;
+}
