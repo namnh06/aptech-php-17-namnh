@@ -1,0 +1,58 @@
+.first-div,
+.second-div,
+.third-div {
+  height: 100px;
+  width: 100%;
+}
+
+.first-div {
+  background-color: orange;
+}
+
+.second-div {
+  background-color: purple;
+}
+
+.third-div {
+  background-color: pink;
+}
+
+.seventh-div {
+  height: 200px;
+  width: 100%;
+  background-color: red;
+}
+
+@media only screen and (min-width: 768px) {
+  .parent {
+    display: flex;
+  }
+
+  .first-div,
+  .second-div {
+    width: 50%;
+  }
+
+  .fourth-div,
+  .fifth-div,
+  .sixth-div {
+    width: 33%;
+    height: 50px;
+  }
+
+  .fourth-div {
+    background-color: gray;
+  }
+
+  .fifth-div {
+    background-color: aqua;
+  }
+
+  .sixth-div {
+    background-color: aquamarine;
+  }
+
+  .seventh-div {
+    display: none;
+  }
+}

@@ -1,0 +1,36 @@
+/* bat dau tu 0 */
+body {
+  background-color: yellow;
+}
+
+.box {
+  height: 100px;
+  /* width: 50%; */
+  background-color: red;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/* bat dau tu 576px */
+@media only screen and (min-width: 576px) {
+  body {
+    background-color: powderblue;
+  }
+
+  .box {
+    /* width: 100%; */
+  }
+
+  .col-sm-6 {
+    width: 50%;
+  }
+}
+
+/* bat dau tu 768px */
+@media only screen and (min-width: 768px) {
+  .col-md-4 {
+    width: 33%;
+  }
+}
