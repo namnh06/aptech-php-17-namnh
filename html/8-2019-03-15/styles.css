@@ -1,0 +1,32 @@
+.fas:hover {
+  color: palegreen !important;
+}
+
+.list-group-item {
+  border: none !important;
+  ;
+}
+
+.Image {
+  height: 200px;
+  /* background-color: blue; */
+  /* background-image: url('./photo-1552579925-35cfbe11e850.jpeg'); */
+  background-repeat: no-repeat;
+  background-position: center -300px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.Image-First {
+  background-image: url('./photo-1552579925-35cfbe11e850.jpeg');
+}
+
+.Image-Second {
+  background-image: url('./16-740x414.png');
+  background-position: center -200px;
+}
+
+.Image-Third {
+  background-image: url('./axon.jpg');
+  background-position: center -100px;
+}
