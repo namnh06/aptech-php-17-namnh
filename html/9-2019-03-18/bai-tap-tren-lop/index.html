@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function abc() {
+        console.log('abc');
+      }
+    </script>
+    <script>
+      function doiChu(ten) {
+        // console.log(document.getElementById('tieu-de'));
+        var loiChao = 'Toi la ' + ten;
+        document.getElementById('tieu-de').innerHTML = loiChao;
+        abc();
+      }
+    </script>
+  </head>
+  <body>
+    <h1 id="tieu-de" style="color:red;">Hello World</h1>
+    <button type="button" onclick="doiChu('')">Click tui di !!!</button>
+    <button onclick="doiChu('Tich')">anh Tich</button>
+    <button onclick="doiChu('Vu')">anh Vu</button>
+    <button onclick="doiMau('blue')">Doi Qua Mau Xanh ban oi !!</button>
+    <button onclick="doiMau('green')">Doi Qua Mau Xanh La Cay ban oi !!</button>
+    <br /><br />
+    <hr />
+    <img
+      src="./photo-1523452617300-93ebbf63ed61.jpeg"
+      alt="ban-trai-de-thuong"
+      width="100%"
+      height="100%"
+      id="ban-trai"
+    />
+    <script>
+      function doiAnh() {
+        var imageElement = document.getElementById('ban-trai');
+        imageElement.src = 'photo-1526803765956-21b2f0cabb4a.jpeg';
+        // console.log(imageElement.src);
+      }
+    </script>
+    <button onclick="doiAnh()">doi Anh</button>
+
+    <script>
+      function doiMau(mau) {
+        var tieuDeId = document.getElementById('tieu-de').style;
+        tieuDeId.backgroundColor = 'yellow';
+        // console.log(tieuDeId);
+        // document.getElementById('tieu-de').style.color = mau;
+      }
+    </script>
+  </body>
+</html>
