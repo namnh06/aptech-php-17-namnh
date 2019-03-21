@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+  <div id="div1">
+    <p id="p1">Paragraph 1</p>
+    <p id="p2">Paragraph 2</p>
+    <!-- THEM DUOI DAY -->
+  </div>
+  <button onclick="addHeadingToDiv()">Add Heading To Div</button>
+  <script>
+    function addHeadingToDiv() {
+      var paragraph = document.createElement("h1");
+      var node = document.createTextNode("Day la H1");
+      paragraph.appendChild(node);
+      // them vao phia sau 
+      var element = document.getElementById("div1");
+      // element.appendChild(paragraph);
+      // them vao phia truoc
+      var p2 = document.getElementById('p2');
+      element.insertBefore(paragraph, p2);
+    }
+  </script>
+
+</body>
+
+</html>
