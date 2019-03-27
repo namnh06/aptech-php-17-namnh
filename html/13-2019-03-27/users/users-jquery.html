@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+
+<body>
+  <button id="get-users">Get Users</button>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody">
+    </tbody>
+  </table>
+  <script src="../jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#get-users').click(function () {
+        $.get('./users.json', function (data, status) {
+          if (status === 'success') {
+            for (var i = 0; i < data.users.length; i++) {
+              var tr = '<tr id="tr-' + i + '"></tr>';
+              var th = '<th>' + (i + 1) + '</th>';
+              var tdName = '<td>' + data.users[i].name + '</td>';
+              var tdEmail = '<td>' + data.users[i].email + '</td>';
+              $('#tableBody').append(tr);
+              $('#tr-' + i).append(th);
+              $('#tr-' + i).append(tdName);
+              $('#tr-' + i).append(tdEmail);
+
+            }
+          }
+        })
+      })
+    })
+
+    function loadUsers() {
+      var http = new XMLHttpRequest();
+      http.open('GET', './users.json');
+      http.send();
+      http.onreadystatechange = function () {
+        if (http.readyState === 4 && http.status === 200) {
+          var rawData = http.responseText;
+          var data = JSON.parse(rawData);
+          var tableBody = document.getElementById('tableBody');
+          for (var i = 0; i < data.users.length; i++) {
+            var tr = document.createElement('tr');
+            var th = document.createElement('th');
+            var thData = document.createTextNode(i + 1);
+            th.appendChild(thData);
+            tr.appendChild(th);
+
+            var td = document.createElement('td');
+            var tdData = document.createTextNode(data.users[i].name);
+            td.appendChild(tdData);
+            tr.appendChild(td);
+
+            var td = document.createElement('td');
+            var tdData = document.createTextNode(data.users[i].email);
+            td.appendChild(tdData);
+            tr.appendChild(td);
+
+            tableBody.appendChild(tr);
+          }
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>
