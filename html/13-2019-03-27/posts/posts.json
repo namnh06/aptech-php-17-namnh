@@ -8,12 +8,61 @@
     "image_url": "https://lorempixel.com/640/480/cats/Faker/?22107",
     "created_at": "2019-03-26 08:49:46",
     "updated_at": "2019-03-26 08:49:46",
-    "categories": [{},
-      {}
+    "categories": [{
+        "id": 2,
+        "name": "quos",
+        "created_at": "2019-03-26 08:49:58",
+        "updated_at": "2019-03-26 08:49:58",
+        "pivot": {
+          "post_id": 1,
+          "category_id": 2
+        }
+      },
+      {
+        "id": 3,
+        "name": "vitae",
+        "created_at": "2019-03-26 08:49:58",
+        "updated_at": "2019-03-26 08:49:58",
+        "pivot": {
+          "post_id": 1,
+          "category_id": 3
+        }
+      }
     ]
   },
-  {},
-  {},
+  {
+    "id": 2,
+    "title": "Aut sequi nesciunt aut et nesciunt dolor aspernatur est qui.",
+    "title_slug": "eos-et-cumque-consequatur-qui",
+    "description": "Aut perferendis perspiciatis voluptate quia velit voluptatem. Aspernatur quis expedita repudiandae voluptates. Aperiam itaque culpa omnis qui rerum facere quam.",
+    "content": "<html><head><title>Veniam debitis sed nulla est eum ipsam.</title></head><body><form action=\"example.org\" method=\"POST\"><label for=\"username\">quod</label><input type=\"text\" id=\"username\"><label for=\"password\">ullam</label><input type=\"password\" id=\"password\"></form><p>Velit ipsam quia.</p><ul><li>Animi sed et.</li><li>Neque hic ratione eos.</li><li>Perspiciatis similique.</li><li>Autem rerum molestiae.</li><li>Minima.</li><li>Dolore suscipit.</li><li>Qui quia accusamus ut.</li><li>Reprehenderit harum deleniti.</li><li>Nihil.</li><li>Facere.</li><li>Magni numquam quaerat.</li></ul><span>Voluptas ducimus possimus pariatur provident dolorem qui.</span></body></html>\n",
+    "image_path": "2d36a6dfe0f3d51adefc84cfa8b1e205.jpg",
+    "image_url": "https://lorempixel.com/640/480/cats/Faker/?70706",
+    "created_at": "2019-03-26 08:49:48",
+    "updated_at": "2019-03-26 08:49:48",
+    "categories": [{
+      "id": 1,
+      "name": "magnam",
+      "created_at": "2019-03-26 08:49:58",
+      "updated_at": "2019-03-26 08:49:58",
+      "pivot": {
+        "post_id": 2,
+        "category_id": 1
+      }
+    }]
+  },
+  {
+    "id": 3,
+    "title": "Quo commodi ullam officia ut.",
+    "title_slug": "sit-vel-aut-eum-est-voluptatem",
+    "description": "Excepturi est accusamus qui ut numquam eum omnis. Ipsa omnis beatae sed atque modi doloribus eveniet et. Illo nemo mollitia ea accusantium. Ut et blanditiis necessitatibus ad.",
+    "content": "<html><head><title>Aut itaque.</title></head><body><form action=\"example.com\" method=\"POST\"><label for=\"username\">et</label><input type=\"text\" id=\"username\"><label for=\"password\">ducimus</label><input type=\"password\" id=\"password\"></form><span>Sed ullam.</span></body></html>\n",
+    "image_path": "aada298b043b43a038137e8884762448.jpg",
+    "image_url": "https://lorempixel.com/640/480/cats/Faker/?12797",
+    "created_at": "2019-03-26 08:49:49",
+    "updated_at": "2019-03-26 08:49:49",
+    "categories": []
+  },
   {
     "id": 4,
     "title": "Optio iste quo incidunt id ut ea sapiente.",

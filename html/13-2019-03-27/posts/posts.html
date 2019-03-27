@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+
+<body>
+  <button onclick="loadUsers()">Get Posts</button>
+
+  <script>
+    function loadUsers() {
+      var http = new XMLHttpRequest();
+      http.open('GET', './posts.json');
+      http.send();
+      http.onreadystatechange = function () {
+        if (http.readyState === 4 && http.status === 200) {
+          var rawData = http.responseText;
+          var data = JSON.parse(rawData);
+
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>
